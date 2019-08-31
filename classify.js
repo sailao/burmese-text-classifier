@@ -1,5 +1,5 @@
 var fs = require('fs');
-var nj = require('numjs');
+var nj = require('./numjs');
 
 var syllable = require("./syllable-breaker");
 
