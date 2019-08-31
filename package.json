@@ -6,6 +6,9 @@
     "url": "https://github.com/sailao/burmese-text-classifier.git",
     "type": "git"
   },
+  "scripts": {
+    "start": "yarn babel-node index.js"
+  },
   "author": "Sai Lao <sailaohsang@aceplussolutions.com>",
   "license": "MIT",
   "dependencies": {
