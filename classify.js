@@ -60,13 +60,13 @@ function think(sentence) {
     return l2;
 }
 
-function classify(sentence) {
+export default function classify(sentence) {
     var results = think(sentence);
     var results_array = results.tolist();
 
     // Only keeping the results that are above ERROR_THRESHOLD
     var trimmed_results = [];
-    for(i in results_array) {
+    for(let i in results_array) {
         if(results_array[i] > ERROR_THRESHOLD) {
             trimmed_results.push([i, results_array[i]]);
         }
@@ -82,7 +82,7 @@ function classify(sentence) {
     });
 
     var return_results = [];
-    for(i in trimmed_results) {
+    for(let i in trimmed_results) {
         var r = trimmed_results[i];
         return_results.push( [ classes[ r[0] ], r[1] ] );
     }

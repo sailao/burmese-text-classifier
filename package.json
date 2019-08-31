@@ -1,0 +1,17 @@
+{
+  "name": "burmese-text-classifier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/sailao/burmese-text-classifier.git",
+    "type": "git"
+  },
+  "author": "Sai Lao <sailaohsang@aceplussolutions.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "express": "^4.17.1"
+  }
+}
